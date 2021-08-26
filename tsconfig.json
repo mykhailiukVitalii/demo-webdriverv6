@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "module": "commonjs",
+        "allowJs": true,
+        "inlineSourceMap": true,
+        //"esModuleInterop": true,
+        "baseUrl": ".",
+        "outDir": "./build",
+        "lib": ["es2018"],
+        "paths": {
+            "*": [ "./*" ],
+            "src/*": ["./src/*"]
+        },
+        "types": ["node", "@wdio/sync", "@wdio/mocha-framework", "@wdio/shared-store-service"],
+        "typeRoots": ["./types"]
+    },
+    "exclude": ["./node_modules/"]
+}
